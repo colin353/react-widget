@@ -1,0 +1,48 @@
+* {
+  font-family: sans-serif;
+}
+
+h1 {
+  text-transform: uppercase;
+  font-weight: bold;
+  letter-spacing: 5px;
+  font-size: 30pt;
+}
+
+p.tagline {
+  font-size: 20pt;
+}
+
+div.logo {
+  display: inline-block;
+  float: left;
+  margin-top: -40px;
+}
+
+div.titlebar {
+  margin-bottom: 20px;
+  height: 50px;
+  padding-top: 20px;
+}
+
+ul.navigation {
+  float: left;
+  margin-top: 0px;
+}
+
+div.titlebar .login-button {
+  float: right;
+}
+
+ul.navigation li {
+  float: left;
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
+div#root {
+  margin-top: 40px;
+  width: 90%;
+  margin-left: auto;
+  margin-right: auto;
+}
