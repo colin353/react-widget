@@ -1,10 +1,11 @@
 var React = require('react');
+var Link  = require('react-router').Link;
 
 var Navigation = React.createClass({
   render: function() {
     return (
       <ul className='navigation'>
-        <li>Place 1</li>
+        <Link to='/widgets'><li onClick={this.navigateWidgets}>Widgets</li></Link>
         <li>Place 2</li>
         <li>Third place</li>
       </ul>
@@ -13,15 +14,11 @@ var Navigation = React.createClass({
 });
 
 var LoginButton = React.createClass({
-  login: function() {
-    alert("login here");
-  },
   render: function() {
     return (
-      <div  className='button login-button'
-            onClick={this.login}>
-        Login
-      </div>
+      <Link to='/login'>
+        <div className='button login-button'>Login</div>
+      </Link>
     );
   }
 });

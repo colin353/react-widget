@@ -13,6 +13,10 @@ p.tagline {
   font-size: 20pt;
 }
 
+tr.header {
+  font-weight: bold;
+}
+
 div.logo {
   display: inline-block;
   float: left;
