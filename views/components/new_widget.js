@@ -26,16 +26,20 @@ CreateWidgetPage = React.createClass({
   },
   render: function() {
     return (
-        <div>
-          <p>Look at the <a href='#/widgets'>list of widgets</a>, if you want.</p>
-          <table>
-          <tbody>
-            <tr><td>name</td><td><input type='text' onChange={this.updateName} value={this.state.name} /></td></tr>
-            <tr><td>length</td><td><input type='text' onChange={this.updateLength} value={this.state.length} /></td></tr>
-            <tr><td></td><td><button onClick={this.newWidget}>create widget</button></td></tr>
-          </tbody>
-          </table>
+      <section style={{padding: '20px', width:'300px'}} className="section--center mdl-grid mdl-grid--no-spacing mdl-shadow--2dp">
+        <div className="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+          <input className="mdl-textfield__input" type="text" id="sample1" />
+          <label className="mdl-textfield__label" onChange={this.updateName} value={this.state.name} for="sample1">name</label>
         </div>
+        <br />
+        <div className="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+          <input className="mdl-textfield__input" onChange={this.updateLength} value={this.state.length}  type="text" id="sample2" />
+          <label className="mdl-textfield__label" for="sample2">length (mm)</label>
+        </div>
+        <button onClick={this.newWidget} style={{float:'right'}} className="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent">
+          Create
+        </button>
+        </section>
     );
   }
 });
