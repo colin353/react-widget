@@ -24,12 +24,13 @@ CreateWidgetPage = React.createClass({
       this.context.router.push('/widgets');
     }.bind(this));
   },
+  componentDidMount: function() { componentHandler.upgradeDom(); },
   render: function() {
     return (
       <section style={{padding: '20px', width:'300px'}} className="section--center mdl-grid mdl-grid--no-spacing mdl-shadow--2dp">
         <div className="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
-          <input className="mdl-textfield__input" type="text" id="sample1" />
-          <label className="mdl-textfield__label" onChange={this.updateName} value={this.state.name} for="sample1">name</label>
+          <input className="mdl-textfield__input" onChange={this.updateName} value={this.state.name} type="text" id="sample1" />
+          <label className="mdl-textfield__label" for="sample1">name</label>
         </div>
         <br />
         <div className="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
