@@ -1,6 +1,5 @@
 var React = require('react');
 var Link  = require('react-router').Link;
-var classNames = require('classnames');
 
 var Navigation = React.createClass({
   render: function() {

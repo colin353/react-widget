@@ -8,7 +8,7 @@ import unittest
 
 class BuildTest(unittest.TestCase):
     def test_production_build(self):
-        subprocess.check_output(["npm", "run", "build"])
+        print subprocess.check_output(["npm", "run", "build"])
 
 tests = [
     BuildTest
